@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="https://formspree.io/f/xgvwpole" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+            
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" required>
+        </fieldset>
+
+        <!-- Date of Birth Section -->
+        <fieldset>
+            <legend>Date of Birth</legend>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <!-- Gender Section -->
+        <fieldset>
+            <legend>Gender</legend>
+            
+            <label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                Female
+            </label>
+        </fieldset>
+
+        <!-- Email Section -->
+        <fieldset>
+            <legend>Email</legend>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <!-- Password Section -->
+        <fieldset>
+            <legend>Password</legend>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" required>
+        </fieldset>
+
+        <!-- Buttons Section -->
+        <fieldset>
+            <button type="submit">Submit</button>
+            <button type="button" onclick="window.location.href='/'">Cancel</button>
+        </fieldset>
+    </form>
+</body>
+</html>
